@@ -1,0 +1,38 @@
+version: "2.0"
+
+stories:
+
+- story: 查询 路径1 - 默认
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: request_search
+    - action: search_form
+    - active_loop: search_form
+    - active_loop: null
+    - action: utter_slots_value
+
+- story: 查询 路径2 - stop form + continue
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: request_search
+    - action: search_form
+    - active_loop: search_form
+    - intent: stop
+    - action: utter_ask_continue
+    - intent: affirm
+    - action: search_form
+    - active_loop: null
+    - action: utter_slots_value
+
+- story: 查询 路径3 - stop form + stop
+  steps:
+    - intent: request_search
+    - action: search_form
+    - active_loop: search_form
+    - intent: stop
+    - action: utter_ask_continue
+    - intent: deny
+    - action: action_deactivate_loop
+    - active_loop: null

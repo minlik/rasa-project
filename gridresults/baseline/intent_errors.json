@@ -1,0 +1,154 @@
+[
+  {
+    "text": "嗨",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7624666094779968
+    }
+  },
+  {
+    "text": "hi",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.44107529520988464
+    }
+  },
+  {
+    "text": "hello",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8393096327781677
+    }
+  },
+  {
+    "text": "再见",
+    "intent": "bye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6077876687049866
+    }
+  },
+  {
+    "text": "拜拜",
+    "intent": "bye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7624666094779968
+    }
+  },
+  {
+    "text": "等等吧",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.41060569882392883
+    }
+  },
+  {
+    "text": "不行",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.57403564453125
+    }
+  },
+  {
+    "text": "月租",
+    "intent": "request_search",
+    "intent_prediction": {
+      "name": "inform_time",
+      "confidence": 0.999850869178772
+    }
+  },
+  {
+    "text": "我的套餐是哪个",
+    "intent": "request_search",
+    "intent_prediction": {
+      "name": "request_transact",
+      "confidence": 0.7814815640449524
+    }
+  },
+  {
+    "text": "上个月的",
+    "intent": "inform_time",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9997583031654358
+    }
+  },
+  {
+    "text": "哈喽",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5536641478538513
+    }
+  },
+  {
+    "text": "是的",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "request_search",
+      "confidence": 0.9878415465354919
+    }
+  },
+  {
+    "text": "行",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9797117114067078
+    }
+  },
+  {
+    "text": "ok",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6622051000595093
+    }
+  },
+  {
+    "text": "我再考虑一下",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "request_search",
+      "confidence": 0.9837522506713867
+    }
+  },
+  {
+    "text": "算了",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.3471200168132782
+    }
+  },
+  {
+    "text": "流量",
+    "intent": "request_search",
+    "intent_prediction": {
+      "name": "request_transact",
+      "confidence": 0.9922990202903748
+    }
+  },
+  {
+    "text": "套餐",
+    "intent": "request_search",
+    "intent_prediction": {
+      "name": "inform_package",
+      "confidence": 0.9998852014541626
+    }
+  },
+  {
+    "text": "[这个月]用了多少流量",
+    "intent": "request_search",
+    "intent_prediction": {
+      "name": "inform_time",
+      "confidence": 0.3872143030166626
+    }
+  }
+]

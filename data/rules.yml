@@ -1,0 +1,37 @@
+version: "2.0"
+
+rules:
+
+- rule: 再见
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: 打招呼
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: 挑战
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+- rule: 闲聊
+  steps:
+    - intent: chitchat
+    - action: utter_chitchat
+
+- rule: 激活表单
+  steps:
+    - intent: request_search
+    - action: search_form
+    - active_loop: search_form
+
+- rule: 提交表单
+  condition:
+    - active_loop: search_form
+  steps:
+    - action: search_form
+    - active_loop: null
+    - action: utter_slots_value

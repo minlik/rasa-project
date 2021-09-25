@@ -1,0 +1,250 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - 你好
+    - 你好啊
+    - 哈喽
+    - 嗨
+    - hi
+    - hello
+    - 上午好
+    - 早上好
+    - 中午好
+    - 下午好
+    - 晚上好
+
+- intent: thanks
+  examples: |
+    - 感谢
+    - 谢谢
+    - 好的，谢谢
+    - 非常感谢
+    - thanks
+    - thank you
+    - 谢了
+    - 3Q
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - bye
+    - bye bye
+    - 再见
+    - 拜拜
+
+- intent: affirm
+  examples: |
+    - 需要的
+    - 好的
+    - 是的
+    - 对的
+    - 行
+    - 可以
+    - ok
+    - 可以的
+    - 没问题
+
+- intent: deny
+  examples: |
+    - 不需要
+    - 不是
+    - 我再考虑一下
+    - 等等吧
+    - 算了
+    - 不用了
+    - 不行
+
+- intent: bot_challenge
+  examples: |
+    - 你是机器人吗
+    - 你是真人吗
+    - 你真笨
+    - 这你都不会
+    - 连这都不会
+    - 啥意思
+    - 什么意思
+
+#- intent: request_transact
+#  examples: |
+#    - 我想办理[流量套餐]{"entity": "item", "value": "\u5957\u9910"}
+#    - 我要办理业务
+#    - 办理新业务
+#    - 给我办一下[流量套餐]{"entity": "item", "value": "\u5957\u9910"}
+#    - 给我办一个[便宜点](item)的[流量套餐]{"entity": "item", "value": "\u5957\u9910"}
+#    - 我想办理[八元](item)的[套餐](item)
+#    - 我想办理[二十八元](item)的[流量套餐]{"entity": "item", "value": "\u5957\u9910"}
+#    - 我想办理[一百二十八元](item)的[流量业务]{"entity": "item", "value": "\u5957\u9910"}
+#    - 我要办理新的[流量业务]{"entity": "item", "value": "\u5957\u9910"}
+#    - 我想更换目前的[套餐](item)
+#    - 我要换一个[流量套餐]{"entity": "item", "value": "\u5957\u9910"}
+
+- intent: request_search
+  examples: |
+    - 查询[消费记录](item)
+    - 查询[套餐类型](item)
+    - 查询[剩余流量](item)
+    - 查询[话费余额](item)
+    - 我想查询[余额](item)
+    - 查询[余额]
+    - 我想查询[这个月](time)用了多少流量
+    - 我想看下还剩多少钱
+    - 我想看下还剩多少[流量](item)
+    - 我要查询下办理的是什么[套餐](item)
+    - 我想看下[上个月](time)的[消费记录](item)
+    - 查询[三月份](time)的[套餐类型](item)
+    - 我[这个月](time)办的是什么[套餐类型](item)
+    - 我[五月](time)用了多少[流量](item)
+    - 查询
+    - 查询业务
+    - 我要查询
+    - 你帮我查下话费信息
+    - 我想要查询话费
+
+- intent: stop
+  examples: |
+    - 退出
+    - 不对
+    - 你说的不对
+    - 错了
+    - 不想要这个
+    - 不是这个
+    - 我想查的不是这个
+    - 有其他的功能吗
+    - 还能做其他事情吗
+    - 怎么退出
+    - 重新来
+    - 不是我想要的
+    - stop
+
+- intent: inform_time
+  examples: |
+    - 我想要[本月](time)的
+    - 我需要[三月](time)的
+    - [一月](time)的
+    - [上月](time)的
+    - [二月](time)
+
+- intent: inform_item
+  examples: |
+    - [消费记录](item)
+    - [套餐类型](item)
+    - [剩余流量](item)
+    - [话费余额](item)
+
+- intent: chitchat/ask_name
+  examples: |
+    - 你是谁
+    - 你叫什么
+    - 你叫什么名字
+    - 你有名字吗
+    - 你叫啥
+
+- intent: chitchat/ask_weather
+  examples: |
+    - 今天天气怎么样？
+    - 今天有下雨吗？
+    - 天气不错嘛
+    - 今天阳光明媚
+
+- intent: chitchat/ask_joke
+  examples: |
+    - 讲个笑话
+    - 太无聊了
+    - 你会讲笑话吗
+    - 有什么好玩的事情吗
+
+- synonym: 消费记录
+  examples: |
+    - 消费情况
+    - 花费情况
+- synonym: 套餐类型
+  examples: |
+    - 月租
+    - 套餐
+- synonym: 剩余流量
+  examples: |
+    - 流量
+- synonym: 话费余额
+    - 余额
+
+
+- synonym: 本月
+  examples: |
+    - 这个月
+- synonym: 上月
+  examples: |
+    - 上个月
+- synonym: 一月
+  examples: |
+    - 一月份
+    - 1月
+- synonym: 二月
+  examples: |
+    - 二月份
+    - 2月
+- synonym: 三月
+  examples: |
+    - 三月份
+    - 3月
+- synonym: 四月
+  examples: |
+    - 四月份
+    - 4月
+
+- synonym: 五月
+  examples: |
+    - 五月份
+    - 5月
+
+- synonym: 六月
+  examples: |
+    - 六月份
+    - 6月
+
+- synonym: 七月
+  examples: |
+    - 七月份
+    - 7月
+
+- synonym: 八月
+  examples: |
+    - 八月份
+    - 8月
+
+- synonym: 九月
+  examples: |
+    - 九月份
+    - 9月
+
+- synonym: 十月
+  examples: |
+    - 十月份
+    - 10月
+
+- synonym: 十一月
+  examples: |
+    - 十一月份
+    - 11月
+
+- synonym: 十二月
+  examples: |
+    - 十二月份
+    - 12月
+
+- lookup: time
+  examples: |
+    - 一月
+    - 二月
+    - 三月
+    - 四月
+    - 五月
+    - 六月
+    - 七月
+    - 八月
+    - 九月
+    - 十月
+    - 十一月
+    - 十二月
+    - 本月
+    - 上月
