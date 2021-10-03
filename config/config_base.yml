@@ -7,16 +7,18 @@ pipeline:
 - name: "JiebaTokenizer"
 - name: "RegexFeaturizer"
 - name: "CountVectorsFeaturizer"
+- name: "CountVectorsFeaturizer"
   analyzer: "char_wb"
   min_ngram: 1
   max_ngram: 4
 - name: "DIETClassifier"
   epochs: 100
-  constrain_similarities: True
+  constrain_similarities: true
 - name: "EntitySynonymMapper"
 - name: ResponseSelector
   epochs: 50
   retrieval_intent: chitchat
+- name: "sentiment"
 
 policies:
   - name: TEDPolicy

@@ -4,20 +4,20 @@
 language: zh
 
 pipeline:
-   - name: JiebaTokenizer
-   - name: RegexFeaturizer
-   - name: LexicalSyntacticFeaturizer
-   - name: LanguageModelFeaturizer
-     model_name: bert
-     model_weights: bert-base-chinese
-   - name: DIETClassifier
-     epochs: 100
-   - name: EntitySynonymMapper
-   - name: ResponseSelector
-     epochs: 100
-   - name: FallbackClassifier
-     threshold: 0.3
-     ambiguity_threshold: 0.1
+- name: "SpacyNLP"
+  model: "zh_core_web_sm"
+- name: "SpacyTokenizer"
+- name: "LanguageModelFeaturizer"
+  model_name: "bert"
+  model_weights: "bert-base-chinese"
+- name: "DIETClassifier"
+  constrain_similarities: True
+- name: "EntitySynonymMapper"
+- name: "ResponseSelector"
+  epochs: 100
+  retrieval_intent: chitchat
+- name: "sentiment"
+
 
 policies:
    - name: MemoizationPolicy
