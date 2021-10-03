@@ -1,0 +1,122 @@
+{
+  "stop": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 13,
+    "confused_with": {
+      "request_search": 5,
+      "affirm": 3,
+      "chitchat": 2
+    }
+  },
+  "chitchat": {
+    "precision": 0.7857142857142857,
+    "recall": 0.8461538461538461,
+    "f1-score": 0.8148148148148148,
+    "support": 13,
+    "confused_with": {
+      "thanks": 1,
+      "bot_challenge": 1
+    }
+  },
+  "inform_item": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "request_search": 4
+    }
+  },
+  "bot_challenge": {
+    "precision": 0.8571428571428571,
+    "recall": 0.8571428571428571,
+    "f1-score": 0.8571428571428571,
+    "support": 7,
+    "confused_with": {
+      "chitchat": 1
+    }
+  },
+  "inform_time": {
+    "precision": 1.0,
+    "recall": 0.2,
+    "f1-score": 0.33333333333333337,
+    "support": 5,
+    "confused_with": {
+      "affirm": 2,
+      "request_search": 1
+    }
+  },
+  "affirm": {
+    "precision": 0.2,
+    "recall": 0.4444444444444444,
+    "f1-score": 0.2758620689655173,
+    "support": 9,
+    "confused_with": {
+      "deny": 2,
+      "thanks": 1
+    }
+  },
+  "deny": {
+    "precision": 0.375,
+    "recall": 0.42857142857142855,
+    "f1-score": 0.39999999999999997,
+    "support": 7,
+    "confused_with": {
+      "affirm": 3,
+      "request_search": 1
+    }
+  },
+  "thanks": {
+    "precision": 0.5714285714285714,
+    "recall": 0.5,
+    "f1-score": 0.5333333333333333,
+    "support": 8,
+    "confused_with": {
+      "affirm": 2,
+      "goodbye": 1
+    }
+  },
+  "greet": {
+    "precision": 0.8,
+    "recall": 0.7272727272727273,
+    "f1-score": 0.761904761904762,
+    "support": 11,
+    "confused_with": {
+      "affirm": 3
+    }
+  },
+  "goodbye": {
+    "precision": 0.6666666666666666,
+    "recall": 0.4,
+    "f1-score": 0.5,
+    "support": 5,
+    "confused_with": {
+      "affirm": 3
+    }
+  },
+  "request_search": {
+    "precision": 0.6071428571428571,
+    "recall": 0.8947368421052632,
+    "f1-score": 0.7234042553191489,
+    "support": 19,
+    "confused_with": {
+      "stop": 1,
+      "inform_item": 1
+    }
+  },
+  "accuracy": 0.5544554455445545,
+  "macro avg": {
+    "precision": 0.533008658008658,
+    "recall": 0.4816656496082334,
+    "f1-score": 0.4727086749830697,
+    "support": 101
+  },
+  "weighted avg": {
+    "precision": 0.5334629891560585,
+    "recall": 0.5544554455445545,
+    "f1-score": 0.5191516611745721,
+    "support": 101
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "text": "你会讲笑话吗",
+    "intent_response_key_target": "chitchat/ask_joke",
+    "intent_response_key_prediction": {
+      "name": "chitchat/ask_name",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "太无聊了",
+    "intent_response_key_target": "chitchat/ask_joke",
+    "intent_response_key_prediction": {
+      "name": "chitchat/ask_name",
+      "confidence": 0.6181018352508545
+    }
+  },
+  {
+    "text": "有什么好玩的事情吗",
+    "intent_response_key_target": "chitchat/ask_joke",
+    "intent_response_key_prediction": {
+      "name": "chitchat/ask_weather",
+      "confidence": 1.0
+    }
+  }
+]

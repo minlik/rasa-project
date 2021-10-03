@@ -1,0 +1,294 @@
+[
+  {
+    "text": "查询剩余流量",
+    "entities": [
+      {
+        "start": 2,
+        "end": 6,
+        "value": "剩余流量",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item",
+        "start": 4,
+        "end": 6,
+        "confidence_entity": 0.9886330962181091,
+        "value": "剩余流量",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "查询话费余额",
+    "entities": [
+      {
+        "start": 2,
+        "end": 6,
+        "value": "话费余额",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item",
+        "start": 4,
+        "end": 6,
+        "confidence_entity": 0.9679936766624451,
+        "value": "话费余额",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "查询[余额]",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item",
+        "start": 2,
+        "end": 5,
+        "confidence_entity": 0.9404594898223877,
+        "value": "[余额",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "我想查询这个月用了多少流量",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "这个月",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.6032052040100098,
+        "value": "本月",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "item",
+        "start": 11,
+        "end": 13,
+        "confidence_entity": 0.9980753660202026,
+        "value": "剩余流量",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "剩余流量",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "剩余流量",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "话费余额",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "话费余额",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item",
+        "start": 2,
+        "end": 4,
+        "confidence_entity": 0.9183228015899658,
+        "value": "话费余额",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "我想查询余额",
+    "entities": [
+      {
+        "start": 4,
+        "end": 6,
+        "value": "余额",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "我想看下还剩多少流量",
+    "entities": [
+      {
+        "start": 8,
+        "end": 10,
+        "value": "流量",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "我要查询下办理的是什么套餐",
+    "entities": [
+      {
+        "start": 11,
+        "end": 13,
+        "value": "套餐",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "我想看下上个月的消费记录",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "上个月",
+        "entity": "time"
+      },
+      {
+        "start": 8,
+        "end": 12,
+        "value": "消费记录",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.555072546005249,
+        "value": "上月",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "item",
+        "start": 8,
+        "end": 10,
+        "confidence_entity": 0.8754866719245911,
+        "value": "消费",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "我这个月办的是什么套餐类型",
+    "entities": [
+      {
+        "start": 1,
+        "end": 4,
+        "value": "这个月",
+        "entity": "time"
+      },
+      {
+        "start": 9,
+        "end": 13,
+        "value": "套餐类型",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 1,
+        "end": 3,
+        "confidence_entity": 0.7385068535804749,
+        "value": "这个",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
+        "start": 3,
+        "end": 4,
+        "confidence_entity": 0.5422742962837219,
+        "value": "月",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "查询业务",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item",
+        "start": 2,
+        "end": 4,
+        "confidence_entity": 0.8550559282302856,
+        "value": "业务",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "一月的",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "一月",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "上月的",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "上月",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "二月",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "二月",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

@@ -1,107 +1,96 @@
 version: '2.0'
-
 config:
   store_entities_as_slots: true
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-
 intents:
-  - greet:
-      use_entities: false
-  - goodbye:
-      use_entities: false
-  - affirm:
-      use_entities: true
-  - deny:
-      use_entities: true
-  - thanks:
-      use_entities: true
-  - request_search:
-      use_entities: true
-  - request_transact:
-      use_entities: true
-  - inform_time:
-      use_entities: true
-  - inform_item:
-      use_entities: true
-  - stop:
-      use_entities: false
-  - utter_slots_value:
-      use_entities: true
-  - bot_challenge
-  - chitchat
-
+- greet:
+    use_entities: []
+- goodbye:
+    use_entities: []
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- thanks:
+    use_entities: true
+- request_search:
+    use_entities: true
+- request_transact:
+    use_entities: true
+- inform_time:
+    use_entities: true
+- inform_item:
+    use_entities: true
+- stop:
+    use_entities: []
+- utter_slots_value:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- chitchat:
+    use_entities: true
 entities:
-  - time
-  - item
-
+- time
+- item
+- sentiment
 slots:
   time:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
     influence_conversation: false
   item:
-    type: text
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
     influence_conversation: false
-
 responses:
   utter_greet:
   - text: 您好！我是机器人小爱，很高兴为您服务！
   - text: 您好，我是机器人小爱，有什么可以帮您吗？
   - text: 您好！我是机器人小爱，可以为您提供查询流量、办理套餐等服务。
-
   utter_goodbye:
-  - text: Bye，下次再见！
-    image: https://i.imgur.com/Y0N2cPx.gif
-  - text: Goodbye!
-    image: https://i.imgur.com/jMIpq1x.gif
-
+  - image: https://i.imgur.com/Y0N2cPx.gif
+    text: Bye，下次再见！
+  - image: https://i.imgur.com/jMIpq1x.gif
+    text: Goodbye!
   utter_thanks:
   - text: 不用谢
-  - text: 这是我应该做的:)
-    image: https://i.imgur.com/ycd2XQC.gif
-
+  - image: https://i.imgur.com/ycd2XQC.gif
+    text: 这是我应该做的:)
   utter_ask_continue:
   - text: 还有其他可以帮您的吗？
-
   utter_ask_time:
   - text: 您需要查询几月份的信息？
-
   utter_wrong_time:
   - text: 您输入的月份信息错误，请重新输入。例如：您可输入本月或者三月。
-
   utter_ask_item:
   - text: 小爱目前支持查询消费记录、套餐类型、剩余流量、话费余额等信息。您可以输入需要查询的信息。
-
   utter_wrong_item:
   - text: 小爱无法识别您说的话，目前小爱支持查询消费记录、套餐类型、剩余流量、话费余额等信息。
-
   utter_slots_value:
-  - text: 正在为您查询一下信息中...
-          - 类别：{item}
-          - 月份：{time}
-
+  - text: 正在为您查询一下信息中... - 类别：{item} - 月份：{time}
   utter_iamabot:
   - text: 我是机器人小爱，您的智能客服助理。
-
-
-
 actions:
-  - validate_search_form
-
+- validate_search_form
 forms:
   search_form:
     ignore_intents:
-      - chitchat
+    - chitchat
     required_slots:
       item:
-        - type: from_entity
-          entity: item
-          intent: [inform_item, request_search]
+      - entity: item
+        intent:
+        - inform_item
+        - request_search
+        type: from_entity
       time:
-        - type: from_entity
-          entity: time
-          intent: [inform_time, request_search]
-
+      - entity: time
+        intent:
+        - inform_time
+        - request_search
+        type: from_entity
 e2e_actions: []

@@ -1,0 +1,298 @@
+[
+  {
+    "text": "嗨",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9961129426956177
+    }
+  },
+  {
+    "text": "hi",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.99924635887146
+    }
+  },
+  {
+    "text": "3Q",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9976164698600769
+    }
+  },
+  {
+    "text": "bye",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9127871990203857
+    }
+  },
+  {
+    "text": "bye bye",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.665577232837677
+    }
+  },
+  {
+    "text": "不是",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8927390575408936
+    }
+  },
+  {
+    "text": "你真笨",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9670676589012146
+    }
+  },
+  {
+    "text": "啥意思",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "chitchat",
+      "confidence": 0.9998889565467834
+    }
+  },
+  {
+    "text": "什么意思",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "chitchat",
+      "confidence": 0.9998267889022827
+    }
+  },
+  {
+    "text": "不对",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9660189151763916
+    }
+  },
+  {
+    "text": "你说的不对",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "chitchat",
+      "confidence": 0.7601678967475891
+    }
+  },
+  {
+    "text": "不是我想要的",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "chitchat",
+      "confidence": 0.598400890827179
+    }
+  },
+  {
+    "text": "我想要本月的",
+    "intent": "inform_time",
+    "intent_prediction": {
+      "name": "request_search",
+      "confidence": 0.9994832277297974
+    }
+  },
+  {
+    "text": "我需要三月的",
+    "intent": "inform_time",
+    "intent_prediction": {
+      "name": "request_search",
+      "confidence": 0.9157963991165161
+    }
+  },
+  {
+    "text": "剩余流量",
+    "intent": "inform_item",
+    "intent_prediction": {
+      "name": "request_search",
+      "confidence": 0.8303400278091431
+    }
+  },
+  {
+    "text": "话费余额",
+    "intent": "inform_item",
+    "intent_prediction": {
+      "name": "request_search",
+      "confidence": 0.7681976556777954
+    }
+  },
+  {
+    "text": "你会讲笑话吗",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.7807044982910156
+    }
+  },
+  {
+    "text": "goodbye",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.989456832408905
+    }
+  },
+  {
+    "text": "再见",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9995423555374146
+    }
+  },
+  {
+    "text": "拜拜",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6308192610740662
+    }
+  },
+  {
+    "text": "没问题",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.8489508628845215
+    }
+  },
+  {
+    "text": "等等吧",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.4073924422264099
+    }
+  },
+  {
+    "text": "算了",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.8932225704193115
+    }
+  },
+  {
+    "text": "不用了",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9997221827507019
+    }
+  },
+  {
+    "text": "你是机器人吗",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "chitchat",
+      "confidence": 0.9997631907463074
+    }
+  },
+  {
+    "text": "你是真人吗",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "chitchat",
+      "confidence": 0.9996514916419983
+    }
+  },
+  {
+    "text": "我想查的不是这个",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "request_search",
+      "confidence": 0.9056896567344666
+    }
+  },
+  {
+    "text": "有其他的功能吗",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8427186012268066
+    }
+  },
+  {
+    "text": "还能做其他事情吗",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "chitchat",
+      "confidence": 0.37259727716445923
+    }
+  },
+  {
+    "text": "stop",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9998430013656616
+    }
+  },
+  {
+    "text": "一月的",
+    "intent": "inform_time",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7735051512718201
+    }
+  },
+  {
+    "text": "上月的",
+    "intent": "inform_time",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6094156503677368
+    }
+  },
+  {
+    "text": "二月",
+    "intent": "inform_time",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5698901414871216
+    }
+  },
+  {
+    "text": "消费记录",
+    "intent": "inform_item",
+    "intent_prediction": {
+      "name": "request_search",
+      "confidence": 0.9866786599159241
+    }
+  },
+  {
+    "text": "套餐类型",
+    "intent": "inform_item",
+    "intent_prediction": {
+      "name": "request_search",
+      "confidence": 0.998814046382904
+    }
+  },
+  {
+    "text": "今天阳光明媚",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9086466431617737
+    }
+  },
+  {
+    "text": "太无聊了",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9959864020347595
+    }
+  }
+]
