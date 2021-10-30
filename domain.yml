@@ -74,6 +74,11 @@ responses:
   - text: 正在为您查询一下信息中... - 类别：{item} - 月份：{time}
   utter_iamabot:
   - text: 我是机器人小爱，您的智能客服助理。
+  utter_ask_rephrase:
+  - text: 小爱正在进化当中，目前还听不懂你说的话。你能换一种说法吗？
+  utter_default:
+  - text: 抱歉，小爱无法识别您说的话。
+
 actions:
 - validate_search_form
 forms:

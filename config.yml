@@ -23,6 +23,8 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
     retrieval_intent: chitchat
+  - name: FallbackClassifier
+    threshold: 0.7
 
 
 policies:

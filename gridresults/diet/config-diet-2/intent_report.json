@@ -1,0 +1,123 @@
+{
+  "affirm": {
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.6666666666666666,
+    "support": 9,
+    "confused_with": {
+      "inform_time": 1,
+      "greet": 1
+    }
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 0.4,
+    "f1-score": 0.5714285714285715,
+    "support": 5,
+    "confused_with": {
+      "greet": 1,
+      "bot_challenge": 1
+    }
+  },
+  "thanks": {
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1-score": 0.8571428571428571,
+    "support": 8,
+    "confused_with": {
+      "greet": 1,
+      "deny": 1
+    }
+  },
+  "greet": {
+    "precision": 0.5625,
+    "recall": 0.8181818181818182,
+    "f1-score": 0.6666666666666666,
+    "support": 11,
+    "confused_with": {
+      "inform_time": 1,
+      "affirm": 1
+    }
+  },
+  "deny": {
+    "precision": 0.4,
+    "recall": 0.5714285714285714,
+    "f1-score": 0.47058823529411764,
+    "support": 7,
+    "confused_with": {
+      "stop": 1,
+      "request_search": 1
+    }
+  },
+  "request_search": {
+    "precision": 0.6666666666666666,
+    "recall": 0.9473684210526315,
+    "f1-score": 0.782608695652174,
+    "support": 19,
+    "confused_with": {
+      "stop": 1
+    }
+  },
+  "bot_challenge": {
+    "precision": 0.5714285714285714,
+    "recall": 0.5714285714285714,
+    "f1-score": 0.5714285714285714,
+    "support": 7,
+    "confused_with": {
+      "stop": 2,
+      "chitchat": 1
+    }
+  },
+  "chitchat": {
+    "precision": 0.7692307692307693,
+    "recall": 0.7692307692307693,
+    "f1-score": 0.7692307692307693,
+    "support": 13,
+    "confused_with": {
+      "deny": 2,
+      "bot_challenge": 1
+    }
+  },
+  "inform_time": {
+    "precision": 0.5,
+    "recall": 0.4,
+    "f1-score": 0.4444444444444445,
+    "support": 5,
+    "confused_with": {
+      "request_search": 2,
+      "greet": 1
+    }
+  },
+  "inform_item": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "request_search": 4
+    }
+  },
+  "stop": {
+    "precision": 0.42857142857142855,
+    "recall": 0.23076923076923078,
+    "f1-score": 0.3,
+    "support": 13,
+    "confused_with": {
+      "greet": 3,
+      "request_search": 2
+    }
+  },
+  "accuracy": 0.6336633663366337,
+  "macro avg": {
+    "precision": 0.5968240093240094,
+    "recall": 0.5568249135234782,
+    "f1-score": 0.5545641343595308,
+    "support": 101
+  },
+  "weighted avg": {
+    "precision": 0.6210454974068835,
+    "recall": 0.6336633663366337,
+    "f1-score": 0.6072626151910039,
+    "support": 101
+  }
+}

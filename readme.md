@@ -17,11 +17,13 @@ pip install jieba
 ```buildoutcfg
 rasa train
 ```
-3run action server
+3. run action server
+
 ```buildoutcfg
 rasa run actions
 ```
-4use rasa x to test 
+4. use rasa x to test 
+
 ```buildoutcfg
 rasa x
 ```

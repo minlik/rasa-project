@@ -1,0 +1,123 @@
+{
+  "stop": {
+    "precision": 0.6666666666666666,
+    "recall": 0.6153846153846154,
+    "f1-score": 0.64,
+    "support": 13,
+    "confused_with": {
+      "chitchat": 2,
+      "affirm": 2
+    }
+  },
+  "inform_time": {
+    "precision": 0.3333333333333333,
+    "recall": 0.2,
+    "f1-score": 0.25,
+    "support": 5,
+    "confused_with": {
+      "request_search": 2,
+      "affirm": 2
+    }
+  },
+  "deny": {
+    "precision": 0.25,
+    "recall": 0.14285714285714285,
+    "f1-score": 0.18181818181818182,
+    "support": 7,
+    "confused_with": {
+      "stop": 2,
+      "affirm": 2,
+      "request_search": 1
+    }
+  },
+  "thanks": {
+    "precision": 0.75,
+    "recall": 0.75,
+    "f1-score": 0.75,
+    "support": 8,
+    "confused_with": {
+      "stop": 1,
+      "affirm": 1
+    }
+  },
+  "request_search": {
+    "precision": 0.75,
+    "recall": 0.9473684210526315,
+    "f1-score": 0.8372093023255814,
+    "support": 19,
+    "confused_with": {
+      "inform_time": 1
+    }
+  },
+  "goodbye": {
+    "precision": 0.75,
+    "recall": 0.6,
+    "f1-score": 0.6666666666666665,
+    "support": 5,
+    "confused_with": {
+      "greet": 2
+    }
+  },
+  "bot_challenge": {
+    "precision": 0.6666666666666666,
+    "recall": 0.5714285714285714,
+    "f1-score": 0.6153846153846153,
+    "support": 7,
+    "confused_with": {
+      "chitchat": 2,
+      "goodbye": 1
+    }
+  },
+  "greet": {
+    "precision": 0.7142857142857143,
+    "recall": 0.9090909090909091,
+    "f1-score": 0.8,
+    "support": 11,
+    "confused_with": {
+      "deny": 1
+    }
+  },
+  "affirm": {
+    "precision": 0.38461538461538464,
+    "recall": 0.5555555555555556,
+    "f1-score": 0.4545454545454546,
+    "support": 9,
+    "confused_with": {
+      "deny": 2,
+      "inform_time": 1
+    }
+  },
+  "inform_item": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "request_search": 3,
+      "affirm": 1
+    }
+  },
+  "chitchat": {
+    "precision": 0.6923076923076923,
+    "recall": 0.6923076923076923,
+    "f1-score": 0.6923076923076923,
+    "support": 13,
+    "confused_with": {
+      "bot_challenge": 2,
+      "thanks": 1
+    }
+  },
+  "accuracy": 0.6435643564356436,
+  "macro avg": {
+    "precision": 0.5416250416250418,
+    "recall": 0.5439993552433744,
+    "f1-score": 0.5352665375498357,
+    "support": 101
+  },
+  "weighted avg": {
+    "precision": 0.6046404090958547,
+    "recall": 0.6435643564356436,
+    "f1-score": 0.616649888602456,
+    "support": 101
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "text": "天气不错嘛",
+    "intent_response_key_target": "chitchat/ask_weather",
+    "intent_response_key_prediction": {
+      "name": "chitchat/ask_name",
+      "confidence": 0.9999646544456482
+    }
+  },
+  {
+    "text": "太无聊了",
+    "intent_response_key_target": "chitchat/ask_joke",
+    "intent_response_key_prediction": {
+      "name": "chitchat/ask_name",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "有什么好玩的事情吗",
+    "intent_response_key_target": "chitchat/ask_joke",
+    "intent_response_key_prediction": {
+      "name": "chitchat/ask_name",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "今天有下雨吗？",
+    "intent_response_key_target": "chitchat/ask_weather",
+    "intent_response_key_prediction": {
+      "name": "chitchat/ask_joke",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "讲个笑话",
+    "intent_response_key_target": "chitchat/ask_joke",
+    "intent_response_key_prediction": {
+      "name": "chitchat/ask_name",
+      "confidence": 0.9748623967170715
+    }
+  },
+  {
+    "text": "你会讲笑话吗",
+    "intent_response_key_target": "chitchat/ask_joke",
+    "intent_response_key_prediction": {
+      "name": "chitchat/ask_name",
+      "confidence": 1.0
+    }
+  }
+]

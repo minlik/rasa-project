@@ -1,0 +1,42 @@
+{
+  "chitchat/ask_weather": {
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1-score": 0.8571428571428571,
+    "support": 4,
+    "confused_with": {
+      "chitchat/ask_joke": 1
+    }
+  },
+  "chitchat/ask_joke": {
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1-score": 0.5,
+    "support": 4,
+    "confused_with": {
+      "chitchat/ask_name": 2
+    }
+  },
+  "chitchat/ask_name": {
+    "precision": 0.6666666666666666,
+    "recall": 0.8,
+    "f1-score": 0.7272727272727272,
+    "support": 5,
+    "confused_with": {
+      "chitchat/ask_joke": 1
+    }
+  },
+  "accuracy": 0.6923076923076923,
+  "macro avg": {
+    "precision": 0.7222222222222222,
+    "recall": 0.6833333333333332,
+    "f1-score": 0.6948051948051948,
+    "support": 13
+  },
+  "weighted avg": {
+    "precision": 0.7179487179487178,
+    "recall": 0.6923076923076923,
+    "f1-score": 0.6973026973026972,
+    "support": 13
+  }
+}

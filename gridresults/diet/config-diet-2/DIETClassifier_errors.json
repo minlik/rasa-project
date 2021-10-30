@@ -1,0 +1,165 @@
+[
+  {
+    "text": "查询剩余流量",
+    "entities": [
+      {
+        "start": 2,
+        "end": 6,
+        "value": "剩余流量",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item",
+        "start": 4,
+        "end": 6,
+        "confidence_entity": 0.93040531873703,
+        "value": "剩余流量",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "查询[余额]",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item",
+        "start": 2,
+        "end": 5,
+        "confidence_entity": 0.9741491675376892,
+        "value": "[余额",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "一月的",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "一月",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "上月的",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "上月",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "剩余流量",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "剩余流量",
+        "entity": "item"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item",
+        "start": 2,
+        "end": 4,
+        "confidence_entity": 0.9857485890388489,
+        "value": "剩余流量",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "我想查询这个月用了多少流量",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "这个月",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.9836416244506836,
+        "value": "本月",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "item",
+        "start": 11,
+        "end": 13,
+        "confidence_entity": 0.9986273050308228,
+        "value": "剩余流量",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "你帮我查下话费信息",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item",
+        "start": 5,
+        "end": 9,
+        "confidence_entity": 0.5495252013206482,
+        "value": "话费信息",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "我想要查询话费",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item",
+        "start": 5,
+        "end": 7,
+        "confidence_entity": 0.9983711838722229,
+        "value": "话费",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "我想查的不是这个",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 6,
+        "end": 8,
+        "confidence_entity": 0.6222712993621826,
+        "value": "这个",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]
