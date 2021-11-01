@@ -104,3 +104,56 @@ stories:
     entities:
     - sentiment: neu
   - action: utter_goodbye
+- story: Story from Conversation ID f0c74cef15c84ad79b9af75c5a9448fb
+  steps:
+  - intent: greet
+    entities:
+    - sentiment: neu
+  - action: utter_greet
+  - intent: request_search
+    entities:
+    - sentiment: neu
+  - action: search_form
+  - active_loop: search_form
+  - slot_was_set:
+    - requested_slot: item
+  - intent: inform_item
+    entities:
+    - sentiment: neu
+    - item: 话费余额
+  - slot_was_set:
+    - item: 话费余额
+  - action: search_form
+  - slot_was_set:
+    - item: 话费余额
+  - slot_was_set:
+    - requested_slot: time
+  - intent: chitchat
+    entities:
+    - sentiment: pos
+  - action: utter_chitchat
+  - action: search_form
+  - slot_was_set:
+    - requested_slot: time
+  - intent: chitchat
+    entities:
+    - sentiment: pos
+    - DATE: 今天
+  - action: utter_chitchat
+  - action: search_form
+  - slot_was_set:
+    - requested_slot: time
+  - intent: inform_time
+    entities:
+    - sentiment: neu
+    - DATE: 七月
+    - time: 七月
+  - slot_was_set:
+    - time: 七月
+  - action: search_form
+  - slot_was_set:
+    - time: 七月
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_slots_value

@@ -31,10 +31,13 @@ intents:
     use_entities: true
 - chitchat:
     use_entities: true
+- nlu_fallback:
+    use_entities: true
 entities:
 - time
 - item
 - sentiment
+- DATE
 slots:
   time:
     type: rasa.shared.core.slots.TextSlot
@@ -43,6 +46,11 @@ slots:
     influence_conversation: false
   item:
     type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
     initial_value: null
     auto_fill: true
     influence_conversation: false
@@ -78,7 +86,6 @@ responses:
   - text: 小爱正在进化当中，目前还听不懂你说的话。你能换一种说法吗？
   utter_default:
   - text: 抱歉，小爱无法识别您说的话。
-
 actions:
 - validate_search_form
 forms:

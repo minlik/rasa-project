@@ -1,9 +1,6 @@
 version: "2.0"
-
 nlu:
 - intent: greet
-  metadata:
-    sentiment: neu
   examples: |
     - 你好
     - 你好啊
@@ -16,10 +13,7 @@ nlu:
     - 中午好
     - 下午好
     - 晚上好
-
 - intent: thanks
-  metadata:
-    sentiment: neu
   examples: |
     - 感谢
     - 谢谢
@@ -29,20 +23,14 @@ nlu:
     - thank you
     - 谢了
     - 3Q
-
 - intent: goodbye
-  metadata:
-    sentiment: neu
   examples: |
     - goodbye
     - bye
     - bye bye
     - 再见
     - 拜拜
-
 - intent: affirm
-  metadata:
-    sentiment: pos
   examples: |
     - 需要的
     - 好的
@@ -53,10 +41,7 @@ nlu:
     - ok
     - 可以的
     - 没问题
-
 - intent: deny
-  metadata:
-    sentiment: neg
   examples: |
     - 不需要
     - 不是
@@ -65,10 +50,7 @@ nlu:
     - 算了
     - 不用了
     - 不行
-
 - intent: bot_challenge
-  metadata:
-    sentiment: neg
   examples: |
     - 你真的是机器人吗
     - 你是真人吗
@@ -77,10 +59,7 @@ nlu:
     - 连这都不会
     - 啥意思
     - 什么意思
-
 - intent: request_search
-  metadata:
-    sentiment: neu
   examples: |
     - 查询[消费记录](item)
     - 查询[套餐类型](item)
@@ -101,10 +80,7 @@ nlu:
     - 我要查询
     - 你帮我查下话费信息
     - 我想要查询话费
-
 - intent: stop
-  metadata:
-    sentiment: neg
   examples: |
     - 退出
     - 不对
@@ -119,54 +95,38 @@ nlu:
     - 重新来
     - 不是我想要的
     - stop
-
 - intent: inform_time
-  metadata:
-    sentiment: neu
   examples: |
     - 我想要[本月](time)的
     - 我需要[三月](time)的
     - [一月](time)的
     - [上月](time)的
     - [二月](time)
-
 - intent: inform_item
-  metadata:
-    sentiment: neu
   examples: |
     - [消费记录](item)
     - [套餐类型](item)
     - [剩余流量](item)
     - [话费余额](item)
-
 - intent: chitchat/ask_name
-  metadata:
-    sentiment: neu
   examples: |
     - 你是谁
     - 你叫什么
     - 你叫什么名字
     - 你有名字吗
     - 你叫啥
-
 - intent: chitchat/ask_weather
-  metadata:
-    sentiment: pos
   examples: |
     - 今天天气怎么样？
     - 今天有下雨吗？
     - 天气不错嘛
     - 今天阳光明媚
-
 - intent: chitchat/ask_joke
-  metadata:
-    sentiment: pos
   examples: |
     - 讲个笑话
     - 太无聊了
     - 你会讲笑话吗
     - 有什么好玩的事情吗
-
 - synonym: 消费记录
   examples: |
     - 消费情况
@@ -181,8 +141,6 @@ nlu:
 - synonym: 话费余额
   examples: |
     - 余额
-
-
 - synonym: 本月
   examples: |
     - 这个月
@@ -205,47 +163,38 @@ nlu:
   examples: |
     - 四月份
     - 4月
-
 - synonym: 五月
   examples: |
     - 五月份
     - 5月
-
 - synonym: 六月
   examples: |
     - 六月份
     - 6月
-
 - synonym: 七月
   examples: |
     - 七月份
     - 7月
-
 - synonym: 八月
   examples: |
     - 八月份
     - 8月
-
 - synonym: 九月
   examples: |
     - 九月份
     - 9月
-
 - synonym: 十月
   examples: |
     - 十月份
     - 10月
-
 - synonym: 十一月
   examples: |
     - 十一月份
     - 11月
-
 - synonym: 十二月
   examples: |
     - 十二月份
     - 12月
-
 - lookup: time
   examples: |
     - 一月
@@ -262,16 +211,13 @@ nlu:
     - 十二月
     - 本月
     - 上月
-
 responses:
   utter_chitchat/ask_name:
   - text: 你好呀，我是机器人小爱
   - text: 我是你的好朋友小爱同学呀
-
   utter_chitchat/ask_weather:
   - text: 今天上海的天气看起来不错呀
   - text: 天气不错，适合出门游玩
-
   utter_chitchat/ask_joke:
   - text: 中国移动：请用户谨防电信诈骗！中国联通：请用户谨防电信诈骗！中国电信：???
   - text: 问：您贵姓？答：我姓黄，红绿灯的黄。
