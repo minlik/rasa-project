@@ -32,78 +32,7 @@ stories:
   - intent: deny
   - action: action_deactivate_loop
   - active_loop: null
-- story: Story from Conversation ID 9e9693b3af3843ecb3f013fe9bc0e2eb
-  steps:
-  - intent: greet
-    entities:
-    - sentiment: neu
-  - action: utter_greet
-  - intent: request_search
-    entities:
-    - sentiment: neu
-  - action: search_form
-  - active_loop: search_form
-  - slot_was_set:
-    - requested_slot: item
-  - intent: inform_item
-    entities:
-    - sentiment: neu
-    - item: 消费记录
-  - slot_was_set:
-    - item: 消费记录
-  - action: search_form
-  - slot_was_set:
-    - item: 消费记录
-  - slot_was_set:
-    - requested_slot: time
-  - intent: inform_time
-    entities:
-    - sentiment: neu
-    - DATE: 六月
-    - time: 六月
-  - slot_was_set:
-    - time: 六月
-  - action: search_form
-  - slot_was_set:
-    - time: 六月
-  - slot_was_set:
-    - requested_slot: null
-  - active_loop: null
-  - action: utter_slots_value
-  - intent: affirm
-    entities:
-    - sentiment: neu
-  - action: search_form
-  - active_loop: search_form
-  - slot_was_set:
-    - item: 消费记录
-  - slot_was_set:
-    - time: 六月
-  - slot_was_set:
-    - requested_slot: null
-  - active_loop: null
-  - action: utter_slots_value
-  - intent: thanks
-    entities:
-    - sentiment: neu
-  - action: action_default_fallback
-  - intent: chitchat
-    entities:
-    - sentiment: pos
-  - action: utter_chitchat
-  - intent: chitchat
-    entities:
-    - sentiment: pos
-  - action: utter_chitchat
-  - intent: chitchat
-    entities:
-    - sentiment: pos
-    - DATE: 今天
-  - action: utter_chitchat
-  - intent: goodbye
-    entities:
-    - sentiment: neu
-  - action: utter_goodbye
+
 - story: Story from Conversation ID f0c74cef15c84ad79b9af75c5a9448fb
   steps:
   - intent: greet
@@ -157,3 +86,119 @@ stories:
     - requested_slot: null
   - active_loop: null
   - action: utter_slots_value
+
+- story: Story from Conversation ID d93fc1fada4c42c99f1b4fd27f0eb300
+  steps:
+  - intent: greet
+    entities:
+    - sentiment: neu
+  - action: utter_greet
+  - intent: request_search
+    entities:
+    - sentiment: neu
+    - item: 套餐类型
+  - slot_was_set:
+    - item: 套餐类型
+  - action: search_form
+  - active_loop: search_form
+  - slot_was_set:
+    - item: 套餐类型
+  - slot_was_set:
+    - item: 套餐类型
+  - slot_was_set:
+    - requested_slot: time
+  - intent: nlu_fallback
+    entities:
+    - sentiment: neu
+    - DATE: 五月
+    - time: 五月
+  - slot_was_set:
+    - time: 五月
+  - action: action_two_stage_fallback
+  - active_loop: action_two_stage_fallback
+  - intent: out_of_scope
+  - action: action_two_stage_fallback
+  - intent: inform_time
+    entities:
+    - sentiment: neu
+    - DATE: 六月
+    - time: 六月
+  - slot_was_set:
+    - time: 六月
+  - action: action_two_stage_fallback
+  - active_loop: null
+  - intent: inform_time
+    entities:
+    - sentiment: neu
+    - DATE: 六月
+    - time: 六月
+  - slot_was_set:
+    - time: 六月
+  - action: search_form
+  - slot_was_set:
+    - time: 六月
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_slots_value
+
+- story: Story from Conversation ID 9b5f9bd51b6548ab83834eb49ca0df0e
+  steps:
+  - intent: greet
+    entities:
+    - sentiment: neu
+  - action: utter_greet
+  - intent: chitchat
+    entities:
+    - sentiment: pos
+  - action: utter_chitchat
+  - intent: greet
+    entities:
+    - sentiment: neu
+    - PERSON: 哈哈哈
+  - action: utter_greet
+  - intent: chitchat
+    entities:
+    - sentiment: neu
+  - action: utter_chitchat
+  - intent: request_search
+    entities:
+    - sentiment: neu
+    - item: 套餐类型
+  - slot_was_set:
+    - item: 套餐类型
+  - action: search_form
+  - active_loop: search_form
+  - slot_was_set:
+    - item: 套餐类型
+  - slot_was_set:
+    - item: 套餐类型
+  - slot_was_set:
+    - requested_slot: time
+  - intent: inform_time
+    entities:
+    - sentiment: neu
+    - DATE: 六月
+    - time: 六月
+  - slot_was_set:
+    - time: 六月
+  - action: search_form
+  - slot_was_set:
+    - time: 六月
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_slots_value
+  - intent: chitchat
+    entities:
+    - sentiment: pos
+  - action: utter_chitchat
+  - intent: chitchat
+    entities:
+    - sentiment: pos
+  - action: utter_chitchat
+  - intent: goodbye
+    entities:
+    - sentiment: neu
+    - PERSON: byebye
+  - action: utter_goodbye
